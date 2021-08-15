@@ -35,11 +35,11 @@ class PostController extends Controller
 
    return 'true';
     }
-    //get all post
-    public function timeLine(){
-        $post = Post::get();
-        return response()->json($post);
-    }
+//    //get all post
+//    public function timeLine(){
+//        $post = Post::get();
+//        return response()->json($post);
+//    }
 
 
 

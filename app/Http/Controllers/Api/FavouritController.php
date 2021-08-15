@@ -33,13 +33,38 @@ class FavouritController extends Controller
 //        $user = (isset($id))? Post::where('id',$user )->get()->first():auth()->user();
 //        return  response()->json($user);
     }
-    public function favouritePost(Request $request){
-        $user = User::with(['favourite' => function($q){
-            $q ->with('post');}
-            ])->find($request->id);
-        return response()->json($user);
+//    public function favouritePost(Request $request){
+//        $user = User::with(['favourite' => function($q){
+//            $q ->with('post');}
+//            ])->find($request->id);
+//        return response()->json($user);
+//
+//        }
+    public function favouritePost($id = null){
 
-        }
+        if(isset($id))
+
+            $favourite = Favourite::where('id','user_id' )->get()->first();
+        else
+            $favourite= Favourite::where('user_id',Auth::user()->id )->get()->first();
+            $post = Post::where('id',$favourite->post_id)->get()->first();
+        return response()->json(['status'=>true,'message'=> trans('admin.success'),'items'=> [
+            'text'=>$post->text ,
+
+        ]]);
+//        return [
+//            'id' =>  $post->post_id,
+////            'name' => $this->name,
+////            'email' => $this->email,
+////            'created_at' => $this->created_at,
+////            'updated_at' => $this->updated_at,
+//        ];
+
+
+
+    }
+
+
 
 
 

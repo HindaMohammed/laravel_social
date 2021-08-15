@@ -6,6 +6,7 @@ use App\Http\Requests\ForgetRequest;
 use App\User;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Password;
 
 class ForgetController extends Controller
 {
@@ -24,6 +25,9 @@ class ForgetController extends Controller
                     'token' =>$token
 
                 ]);
+
+
+
                 return response()->json('check your email');
             }catch (\Exception $exception){
                 return response([
@@ -37,3 +41,6 @@ class ForgetController extends Controller
 
     }
 }
+//     u should send an email here ..
+//     search how to send mails its pretty easy.. if any thing happens just ask ill help you :)
+//     notice: at the send email function you should render an Email.blade.php view.
