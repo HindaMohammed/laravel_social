@@ -1,0 +1,834 @@
+{
+	"info": {
+		"_postman_id": "b978b815-c53f-44de-bf35-f9f21fb98541",
+		"name": "social",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "/user",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImMwNGRkNDA5ZWQ4MDYyMzhlZGZmNzljNmNlNDcwZjc3N2MxYzIyMDZlYzFhYjcwZjNhYmQ1NzBlNzQyNDA2Mzc3MzE1YWRiOGUzNGYxNTU4In0.eyJhdWQiOiIyIiwianRpIjoiYzA0ZGQ0MDllZDgwNjIzOGVkZmY3OWM2Y2U0NzBmNzc3YzFjMjIwNmVjMWFiNzBmM2FiZDU3MGU3NDI0MDYzNzczMTVhZGI4ZTM0ZjE1NTgiLCJpYXQiOjE2Mjg0MDM1MTIsIm5iZiI6MTYyODQwMzUxMywiZXhwIjoxNjU5OTM5NTEyLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.qC8stapK7s7oF9NVL8pu_LtgZeIZH1bA9W80-QNGJ1N-cGt1Kj2bFHzupKZKovfCAVDPSPNA9_BaGTLlZ0IB5aNEpzH15LpZZWrdUCQsYH4VcwtlJb9eZDA6wl4fy9QTsLoy-wgCBs6DPj7R0me3NM2UXq4Gt5hOWa1PZx7oX0HQRt_BmrkPoOYmQ6Pb3xm7AMcUANnXF9l7rXSCf5n6w4Gy70yMhbYPpg_hnhZ7va6PC5_edzpkKd6sqPia4SkxWHgFirNgsoa0u2dw8URnVzCpokIL0BEmKsoxtkaFahxxF5StvsK7dJKu6UeBVu2BOhavjMJOtKi7DTjJMjRF9_XNkCXfyWpcdNwOxb-b9Tu-UDAbVA46e0uvCb0Zaa-f83ALHUONkS5pAQzp7EWneXeacACSqYwzOoUCogqn6UvazLURtrAuMXl4dGl_X8MGeBpddbbFvSsOomJ5b3RTohM7458Vlg0ZobWRmyeSwhQMKbuK11wDIJtJ0mzoz62Nis3mzVOSM527XoWBf9QLajo1uElxeuAA1zxmuRKf8AIE_ihVA1PXEck8MSaCTIZYOBES5PGazMSvjSX5rRtp1xTd0txgLVyk7o9wPXxhqUkFIrYlZBH3IyoGgTFKm9EWmuSwEKlEGSZpV8icOUsOSBn5rZLFfoAJgWIZm5qJviE"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/user",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/register",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					},
+					{
+						"key": "Accept-Charset",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImFiMzljOWYwYjdhMmFmYmE5OGNjYmZmM2QyMjNiOWJlNDhiZDU2YTRiZTI3Yzk3ZTE4Nzc3MmZkNDYyNDdlOWNjZTNkMDVjZTIyNTM3ZGM2In0.eyJhdWQiOiIyIiwianRpIjoiYWIzOWM5ZjBiN2EyYWZiYTk4Y2NiZmYzZDIyM2I5YmU0OGJkNTZhNGJlMjdjOTdlMTg3NzcyZmQ0NjI0N2U5Y2NlM2QwNWNlMjI1MzdkYzYiLCJpYXQiOjE2Mjc4MDU2OTgsIm5iZiI6MTYyNzgwNTY5OCwiZXhwIjoxNjU5MzQxNjk4LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.StVSxuUp3eihoocrZ8TlxRw3yD2o9Rb1vGuUFMnIqNScI54PPrhcTGNFMfRwM-rXOj4tZc62d4dAgTX_aYC1MfLFS-bohoQmmPmZgb5_eF--HA-UVRYtXpGIBS53xJ5RnH2MTvMPhPeXK4-GABHaL5X6iFNRoHdsEmVfe2iHSNT61p8pu-NehycJockYBtuEDYeLrHV5uKUuQO6z_S1Q607AebwxF8DWgewcxVQWBhgDz9-2QRfAoklyFvz9P3NCEfSi8wiS1eFvxTonwER0IYDzMzUVrmehff2pp934rdgnBFKh6T503m2vsmU__lrh8I6WHMk-DCvRZJkrzWSS2T_VBILyo8QZaLP-7N0jc01aHch8upe9eSV6n2uq5tDiC2AT4Y_s2xzfGPDf42toKzN653HvE8KZgfS65is880rASL7DI5-W15W8wqUn5Jo2F47ht5IMjilzN2WZQb7QjWz3-nwo0y2jZUZiKgneWwr7reSAAJ2V_ZUzkRiWkH-mgyNDLdAmpEXgXYzj8mJLl9k7uZMfouJi8QdRJvvK4oK4lEdB9rWqr5P82HpxiDkEUSzXtLVLA7YKcc-GUrcntH8Odi5-MM0q8UG5R_oKCI0fehmf4-SkVlet8Te-jzirOddxzafGBXlApslejSFKF0j6NrNTQfbjFIcKKx7wUAE"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "mohammed",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "mohammed@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/register   ",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"register   "
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					},
+					{
+						"key": "Accept-Charset",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImE5ZGUxZjk1NTAyNTRiMWZlZGVhMDQ1YjZmNWJkYjgwNTdjNjhiN2QxODFlN2RmODc4MjdlNWRiNWYzMDlmOTk1YzYyZmI0ZGQzMmM1OTFhIn0.eyJhdWQiOiIyIiwianRpIjoiYTlkZTFmOTU1MDI1NGIxZmVkZWEwNDViNmY1YmRiODA1N2M2OGI3ZDE4MWU3ZGY4NzgyN2U1ZGI1ZjMwOWY5OTVjNjJmYjRkZDMyYzU5MWEiLCJpYXQiOjE2Mjg3NDk2MDAsIm5iZiI6MTYyODc0OTYwMCwiZXhwIjoxNjYwMjg1NTk5LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.PikTNd76OoJy3bMQtIOuPau3rt2hl-7_ZLBJC8pauuqEAgiOBiely-479CNXPLoCKEUz3gBynb1yUCssXkY6cKji4oiJLuVXb6c_hIyaDjq-h0Kpzzgz9vUFxtdxOfP5ZW_aUhP146_vSg8LKiWgat9D95NADHGZNTuwNjxJ4-A-lXru1qpOLOL6yjmcGVJUNp35qvfEgU6PAkk5zCVnXNfcKy2xb7aFzgABSB18-zubH1dXy6WLY_XKi_TOWDH6TefZZAC5K3cn8L3Uu3OpDmRuxb7BjtsbZ5VVGDQFtBoBwn1HZtaCUGs40zJw626rEqRO8QI-S8goqQpIX5ox7dJlAPNVZWCWL-_A3lT6Yjvv8r29n3SXr5UD2xZMAuZBzSUowuvJy2g7DrnasvLzpsCTw20xdKUouU0loiOyNMcUf47XBcTSqPsruKjnEKr71lCmhBQR7Fe2QyumpSaq7qjKCLbAozBzN5zFaMDEsSUUUOlGejO4g6mtXgeLz0DVF2TgCJY2TPnYzWLZtem-vu5R8jBfPUPIyVI90i1qnGFZuHV_HyqZ3Y3aimBMlCJznPEeVwJZbhq8FSoykrBJZ7Ii8AjMbc2Olhj22U6rTzheRjuZO9_5WKVzTjXaZtaW4OO8588LsWs0yGFkG8SYGZJRpXhoOOP7VBWPb73EtGU"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "grant_type",
+							"value": "password",
+							"type": "text"
+						},
+						{
+							"key": "client_id",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "client_secret",
+							"value": "XtdiDdrDx7tzF0yqF6sguW8Fqb4vI7wYgFG6Jvkl",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "hend@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/oauth/token",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"oauth",
+						"token"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/user",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					},
+					{
+						"key": "Accept-Charset",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer {{access_token}}"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "roro",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "roro@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/user",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/postPage",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{access_token}}"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/postPage?id=1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"postPage"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/timeLine",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{access_token}}"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/timeLine",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"timeLine"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/createPost",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{access_token}}"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "text",
+							"value": "\"وهو معكم اينما كنتم\"",
+							"type": "text"
+						},
+						{
+							"key": "user_id",
+							"value": "3",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/addPost",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"addPost"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/profile",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{access_token}}"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"disabled": true
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en",
+						"disabled": true
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/profile",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"profile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/addfavourite",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{access_token}}"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"disabled": true
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en",
+						"disabled": true
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "user_id",
+							"value": "3",
+							"type": "text"
+						},
+						{
+							"key": "post_id",
+							"value": "5",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/addfavourite",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"addfavourite"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/favourite",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{access_token}}"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"disabled": true
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en",
+						"disabled": true
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/favourite",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"favourite"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/friends",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{access_token}}"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"disabled": true
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en",
+						"disabled": true
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id",
+							"value": "4",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/friendPost",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"friendPost"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/forgetPassword",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{access_token}}"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "m1999@gmail.com",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/forget",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"forget"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/logout",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					},
+					{
+						"key": "Accept-Charset",
+						"value": "application/json"
+					},
+					{
+						"key": "",
+						"value": "Bearer {{access_token}}"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "grant_type",
+							"value": "password",
+							"type": "text"
+						},
+						{
+							"key": "client_id",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "client_secret",
+							"value": "XtdiDdrDx7tzF0yqF6sguW8Fqb4vI7wYgFG6Jvkl",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "roba@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/oauth/token",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"oauth",
+						"token"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/delete",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjJlMjM0NTIzMGJhMmNiZjJkNzQ2NjJhNmY1MGM5NDMzOTE4NzJjYzA4ZDQ2MDg2YzU1MzhkNDk2MWRjNzdkNmMxZmM1YmVlZDE2ZDViMjVmIn0.eyJhdWQiOiIyIiwianRpIjoiMmUyMzQ1MjMwYmEyY2JmMmQ3NDY2MmE2ZjUwYzk0MzM5MTg3MmNjMDhkNDYwODZjNTUzOGQ0OTYxZGM3N2Q2YzFmYzViZWVkMTZkNWIyNWYiLCJpYXQiOjE2Mjg0MTIxMDQsIm5iZiI6MTYyODQxMjEwNCwiZXhwIjoxNjU5OTQ4MTAzLCJzdWIiOiIzIiwic2NvcGVzIjpbXX0.OHWiNfy3PCsj_2rNnDWM8qnSHMAH9hYVVcIgc_CjbTwc2_sOJYN5zVZstE9_fxKgoMmYFrdG6Xoc4Ww3n2Z3mG_S3x283ss5bXC9kR_EWEzlbCeoqv2InEReJ9wYlsr-DpidxZXIzCcCopB5h56BkEH2KY3kwjli83D0FFHjWF40UMQmU7MOIG_LtIoiwWsuqYXZyIVzQtoGdtvnftN3-C3vVxbrICTAUH7kljkLPO2BMXUrUVZvIEEmjeUyZFfKQt3AeEcrL426wT9lCRCcKwDSFQVA5vH2pGqw0YV8IxSDZ_ye9he3NWobxXNCRs8F0b8vO4P3yHfw1udyErXVkt2s6aC6f3vCGJUpFQkhDKQEGMhsrwVGcKY47-Y3fgHjFABl56PTRsOFG_8P4ug6K55BHJ83CCEBwWsRkL__gv3RXANacck2pwqTCkZmYzas1LA9K3AxaenZFiHoK-cyyB0_jx_W-eyfy7YeA44EmGWjlD0YjjdVKxbBzMUH4eP0KV6K4XW4UCCw5aCZU9JcQkAmDvpcdshqoM_gcrVmUSLBKlsNoTi-qrodz9VKCbmuRujdzuX0HV9kZnkUgV62os-qI1U-Ngn2p66qsWlqHRl_wyvrsUIDBbDcH5bK17Cjqf3LZGv3RnWfI1IXTu0KPFtdTzGIdhR7dzbMczLBx7A"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/delUser",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"delUser"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "home",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{access_token}}"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/postPage",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"postPage"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "timeLine",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{access_token}}"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "currentPage",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/home",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"home"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/addComment",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{access_token}}"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "text",
+							"value": "\"لا تقنطوا من رحمة الله \"",
+							"type": "text"
+						},
+						{
+							"key": "user_id",
+							"value": "5",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/addPost",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"addPost"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
